@@ -113,7 +113,7 @@ try:
             phoneme_mode = input('Select phoneme set\n1: Arpabet\n2: X-Sampa\n')
             if phoneme_mode == '1':
                 #Vowel list based on Arpasing
-                vowels = ['aa', 'ae', 'ah', 'ao', 'ax', 'eh', 'er', 'ih', 'iy', 'uh', 'uw', 'aw', 'ay', 'ey', 'ow', 'oy']
+                vowels = ['aa', 'ae', 'ah', 'ao', 'ax', 'eh', 'er', 'ih', 'iy', 'uh', 'uw', 'aw', 'ay', 'ey', 'ow', 'oy', 'en', 'em', 'el']
             else:
                 #Vowel list from https://en.wikipedia.org/wiki/X-SAMPA#Vowels
                 vowels = ['i', 'y', '1', '}', 'M', 'u', 'I', 'Y', 'I\\', 'U\\', 'U', 'e', '2', '@\\', '8', '7', 'o', 'e_o', '2_o', '@', 'o_o', 'E', '9', '3', '3\\', 'V', 'O', '{', '6', 'a', '&', 'a_"', 'A', 'Q']
@@ -201,7 +201,7 @@ try:
 
     quant_strength = input('Quantization in note length (int) [15]: ')
     if not quant_strength:
-        quant_strength = 15
+        quant_strength = 60
     else:
         quant_strength = int(quant_strength)
         
